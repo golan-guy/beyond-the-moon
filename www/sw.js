@@ -1,11 +1,10 @@
-const CACHE = "btm-v2";
+const CACHE = "btm-v3";
 const ASSETS = [
   "./", "index.html", "fonts.css", "manifest.webmanifest",
   "icons/apple-touch-icon.png",
   "icons/icon-192.png",
   "icons/icon-512.png",
   "icons/icon-maskable-512.png",
-  "icons/logo.jpg",
   "fonts/heebo-hebrew-400-normal.woff2",
   "fonts/heebo-hebrew-500-normal.woff2",
   "fonts/heebo-hebrew-700-normal.woff2",
