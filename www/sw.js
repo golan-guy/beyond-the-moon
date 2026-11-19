@@ -1,4 +1,4 @@
-const CACHE = "btm-v3";
+const CACHE = "btm-v4";
 const ASSETS = [
   "./", "index.html", "fonts.css", "manifest.webmanifest",
   "icons/apple-touch-icon.png",
