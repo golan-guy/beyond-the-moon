@@ -35,15 +35,19 @@ npm run serve
 
 ## Changing the game
 
-Edit `www/index.html`. After a change, bump `CACHE` in `www/sw.js` (`btm-v1` → `btm-v2`)
+Edit `www/index.html`. After a change, bump `CACHE` in `www/sw.js` (e.g. `btm-v2` → `btm-v3`)
 so phones that installed the web app pick up the new version. For the APK, rebuild.
 
 ## What was changed from the original artifact
 
 - Fonts are bundled in `www/fonts/` instead of loading from Google Fonts (works offline).
-- Added app icon, `manifest.webmanifest` and `sw.js` (offline support).
-- Page title is now "Beyond the Moon".
-- The QR page defaults to the address the app is hosted at.
+- App icon, `manifest.webmanifest` and `sw.js` (offline support); logo image on the start screen.
+- The oxygen clock follows real time, so it keeps running while the app is in the background.
+- Progress is saved: reopening the app offers to resume the mission.
+- "Install the app" button on the start screen, vibration feedback, screen stays awake during play, share button on the win screen.
+- Question pool of 24 (8 per room); every game draws 4 per room at random.
+- The final timeline challenge no longer shows mission numbers or dates until it is solved.
 
-The game itself (questions, rooms, mini-games, leaderboard) is untouched.
+Questions live in the `ROOMS` array in `www/index.html`. The first four per room are the originals;
+the added ones follow in the "extra question pool" block.
 The debug APK is for installing on your own devices; Google Play needs a signed release build.

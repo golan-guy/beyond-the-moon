@@ -264,6 +264,12 @@
   .infolinks a:hover{border-color:var(--accent2)}
   .note a{color:var(--accent2);text-decoration:none;font-weight:700}
 
+  .patch.logo{width:min(64vw,236px);height:auto;border-radius:20%;filter:drop-shadow(0 0 26px rgba(150,110,255,.5))}
+  #sheet{position:fixed;inset:0;z-index:13;display:none;place-items:center;background:rgba(2,4,12,.8);backdrop-filter:blur(6px);padding:20px}
+  #sheet.show{display:grid}
+  #sheet ol{text-align:start;font-size:19px;line-height:1.7;padding-inline-start:26px;margin:12px 0 0}
+  .tl-item.reveal{border-color:var(--good);background:rgba(78,227,154,.12);cursor:default}
+  .tl-item.reveal .n{background:var(--good);color:#002a14;border:0}
 </style>
 </head>
 <body>
@@ -370,7 +376,7 @@
     <li>If you were on the Artemis V crew, what would you want to build first at the Moon base?</li>
   </ol></div>
 </section>
-<section><h2>All questions and answers</h2><p class="secsub">12 questions · the correct answer is marked in green</p>
+<section><h2>All questions and answers</h2><p class="secsub" id="qcount">The correct answer is marked in green</p>
 <p style="text-align:center"><button class="btn ghost small" id="toggleAns">🙈 Hide answers</button></p>
 <div class="pcard" id="qlist"><h3 class="qroom">Room 1: Phase 1 – Build, Test, Learn <span class="pill">Phase 1 · Build, Test, Learn</span> <span class="pill">Code: 2026</span></h3><div class="q"><b>1. What type of cargo is sent during Phase 1 of the Lunar Program?</b><div class="opts"><span class="ans">Robots, drones, and unmanned cargo landers.</span> · <span class="">A crew of 12 astronauts to construct the initial living quarters.</span> · <span class="">An active nuclear reactor only, without any accompanying scientific equipment.</span> · <span class="">A crewed rover designed for long-term habitation.</span></div><div class="qh">Hint: Phase 1 prepares the ground – before people come to stay.</div></div><div class="q"><b>2. Which Artemis mission was the first crewed flight, carrying 4 astronauts around the Moon without landing on it?</b><div class="opts"><span class="ans">Artemis II (April 2026).</span> · <span class="">Artemis I (November 2022).</span> · <span class="">Artemis III (2027).</span> · <span class="">Artemis VII (the 2030s).</span></div><div class="qh">Hint: It flew this year – and it wasn&#x27;t the uncrewed test flight.</div></div><div class="q"><b>3. During the Artemis III mission, what key technological process will be tested in orbit around the Earth, in preparation for the crewed landing?</b><div class="opts"><span class="ans">A docking demonstration between the Orion spacecraft and the Human Landing System (HLS).</span> · <span class="">Connecting a nuclear reactor to the &quot;Lunar Cruiser&quot; rover on the lunar surface.</span> · <span class="">Deploying the Multi-Purpose Habitat (MPH) at the South Pole.</span> · <span class="">Launching an uncrewed &quot;Argonaut&quot; lander back to Earth.</span></div><div class="qh">Hint: Two spacecraft need to connect safely in space.</div></div><div class="q"><b>4. Why did NASA divide the Artemis program into phases (robotic exploration – short crewed landings – permanent habitat) instead of building a permanent base right away?</b><div class="opts"><span class="ans">To manage and reduce risk: each stage tests a different critical part (rocket safety – life support and docking – long-term survival and resource use) before the risk to human life grows.</span> · <span class="">Because NASA was waiting for other countries to develop all the necessary technologies on its behalf.</span> · <span class="">Because the Moon only changes its orbit around the Earth once every decade.</span> · <span class="">Because spacesuits were not available until the year 2030.</span></div><div class="qh">Hint: Think about safety: what if something goes wrong?</div></div><h3 class="qroom">Room 2: Phase 2 – Back on the Moon <span class="pill">Phase 2 · Crewed landings</span> <span class="pill">Code: 2028</span></h3><div class="q"><b>5. What is unique about the landing site for the crewed Artemis missions (starting with Artemis IV)?</b><div class="opts"><span class="ans">It is in the Moon&#x27;s South Pole region, which has water ice in shadowed craters and areas that get nearly continuous sunlight.</span> · <span class="">It is on the Moon&#x27;s equator, because of the comfortable temperatures.</span> · <span class="">It is on the far side (&quot;the dark side&quot;) of the Moon, for shelter from radiation.</span> · <span class="">It is the exact historical landing site of Apollo 11.</span></div><div class="qh">Hint: Think about water – and about sunlight.</div></div><div class="q"><b>6. How is life support during a Phase 2 mission (such as Artemis IV) different from life support in Phase 3 (the Moon base)?</b><div class="opts"><span class="ans">In Phase 2 the crew relies mainly on limited supplies carried by the lander for a short stay; Phase 3 needs closed-loop systems that recycle water and air for stays of months.</span> · <span class="">In Phase 2 no oxygen is needed at all, and in Phase 3 the crew breathes only nitrogen.</span> · <span class="">In Phase 2 astronauts are completely protected from radiation, and in Phase 3 there is no protection at all.</span> · <span class="">In Phase 3 astronauts can return to Earth within 5 minutes at any time.</span></div><div class="qh">Hint: A short visit vs. living there for months.</div></div><div class="q"><b>7. NASA wants to use local resources on the Moon (ISRU) – such as making oxygen and water from lunar ice. Why is this so important for a permanent home on the Moon and for future missions to Mars?</b><div class="opts"><span class="ans">Because launching water, oxygen and fuel from Earth is very expensive and heavy; making them locally gives independence and greatly lowers mission costs.</span> · <span class="">Because water on the Moon is fresher and tastier than water on Earth.</span> · <span class="">Because bringing water from Earth is forbidden, due to the risk of contaminating the Moon.</span> · <span class="">Because the Orion spacecraft has no space at all for water bottles.</span></div><div class="qh">Hint: Everything launched from Earth costs a lot – because it&#x27;s heavy.</div></div><div class="q"><b>8. NASA calls the Moon base a &quot;testing ground&quot; for Mars. What advantage does the Moon have as a testing ground, compared to flying straight to Mars?</b><div class="opts"><span class="ans">The Moon is relatively close, so we can test habitats, robots and resource use while help or rescue is still possible in an emergency.</span> · <span class="">The atmospheres of the Moon and Mars are identical, so the flight is the same.</span> · <span class="">The Moon&#x27;s gravity is stronger than both Earth&#x27;s and Mars&#x27;.</span> · <span class="">The journey to Mars is shorter than the journey to the Moon.</span></div><div class="qh">Hint: How long does it take to reach the Moon? And Mars?</div></div><h3 class="qroom">Room 3: Phase 3 – The Moon Base <span class="pill">Phase 3 · Long stays</span> <span class="pill">Code: 2030</span></h3><div class="q"><b>9. What is the permanent home planned for Phase 3 of the Moon base, and how long is it designed to last?</b><div class="opts"><span class="ans">The Multi-Purpose Habitat (MPH), designed to last about 10 years.</span> · <span class="">The Lunar Gateway station, designed to land on the Moon for two years.</span> · <span class="">The Orion capsule, designed to hold 100 people for one year.</span> · <span class="">The Argonaut lander, only for emergency shelter for 24 hours.</span></div><div class="qh">Hint: Its name says it can be used for many purposes.</div></div><div class="q"><b>10. What is the special role of the JAXA/Toyota pressurized rover (the &quot;Lunar Cruiser&quot;) in Phase 3?</b><div class="opts"><span class="ans">To let astronauts live, work and travel in a protected, climate-controlled cabin – without spacesuits – for up to 30 days.</span> · <span class="">To launch rockets back to Earth on its own.</span> · <span class="">Only to dig water channels under the lunar surface.</span> · <span class="">To carry nuclear fuel straight to the International Space Station.</span></div><div class="qh">Hint: Think of a camper van – on the Moon.</div></div><div class="q"><b>11. Why does the permanent Moon base need both solar panels (on sunny peaks) and a nuclear reactor?</b><div class="opts"><span class="ans">Because there is no sunlight inside shadowed craters or during the lunar night, and the reactor gives a steady supply of energy for heating and running the base.</span> · <span class="">Because solar panels only work when it rains on the Moon.</span> · <span class="">Because the nuclear reactor is mainly used to keep meteorites away from the base.</span> · <span class="">Because sunlight on the Moon is too weak to make any electricity.</span></div><div class="qh">Hint: What happens to solar panels at night?</div></div><div class="q"><b>12. Which surface vehicle is planned to launch on the Artemis VII mission in the 2030s, and what lets astronauts work in it without a spacesuit?</b><div class="opts"><span class="ans">The Lunar Cruiser (by JAXA and Toyota) – a pressurized, climate-controlled vehicle where the crew can live and work for up to 30 days.</span> · <span class="">The Argonaut robotic cargo lander.</span> · <span class="">The Orion spacecraft.</span> · <span class="">The Gateway space station (habitation module).</span></div><div class="qh">Hint: You already met this vehicle in this room.</div></div><h3 class="qroom">Final challenge: the timeline</h3><ol class="tlq"><li>🛰️ Artemis I – uncrewed flight around the Moon (2022)</li><li>🌘 Artemis II – 4 astronauts fly around the Moon (April 2026)</li><li>🌍 Artemis III – docking practice in Earth orbit (2027)</li><li>👣 Artemis IV – landing on the Moon! (early 2028)</li><li>🏗️ Artemis V – second landing and building a base (late 2028)</li></ol></div></section></div>
 <div class="pin" id="p-qr" hidden><div class="phero"><h1 class="pbig" style="font-size:clamp(28px,5.5vw,50px)">SCAN TO PLAY</h1><p class="plead">Show this on the classroom screen – students scan it with their phone camera.</p></div>
@@ -380,6 +386,7 @@
 <div class="pcard"><h3>🤖 Android</h3><p>Scan, open the link, then menu ⋮ → "Add to Home screen".</p></div></div>
 <div class="pcard" style="margin-top:16px"><label for="qrin" style="font-weight:700">The address the code opens:</label>
 <input id="qrin" value="https://claude.ai/artifact/MprfcqK2kK2zmsAtWe4bnU" spellcheck="false"><p class="secsub" style="text-align:left;margin:6px 0 0;font-size:14px">Moved the game to a new address? Paste it here – the code updates instantly.</p></div></div></div>
+<div id="sheet"><div class="card center" style="max-width:520px"><div id="sheetBody"></div><div class="row"><button class="btn" id="sheetClose">Got it</button></div></div></div>
 <div id="pause"><div class="card center" style="max-width:520px"><div style="font-size:60px">⏸</div><h2 class="big">PAUSED</h2><p>Mission Control has paused the mission. The oxygen clock is stopped.</p><div class="row"><button class="btn pulse" id="resume">▶ Resume mission</button></div></div></div>
 <div class="wrap">
   <div class="hud hidden" id="hud">
@@ -2771,12 +2778,33 @@ const ROOMS = [
   }
 ];
 
+/* ---- extra question pool: every game draws 4 questions per room ---- */
+ROOMS[0].qs.push(
+  {"e": "🚀", "q": "Which rocket launched the Artemis I and Artemis II missions toward the Moon?", "opts": ["The Space Launch System (SLS) – NASA's giant Moon rocket.", "Saturn V – the same rocket that launched the Apollo missions.", "The Space Shuttle.", "A small satellite rocket launched from an airplane."], "a": 0, "hint": "Its name is three letters long – and it was built specially for Artemis.", "ex": "Artemis I and II were launched by the Space Launch System (SLS), with the Orion spacecraft on top. Saturn V launched the Apollo missions more than 50 years ago."},
+  {"e": "🧪", "q": "Artemis I flew around the Moon with no astronauts on board. Why fly an uncrewed test first?", "opts": ["To check that the rocket, the spacecraft and its heat shield work safely before people's lives depend on them.", "Because the Orion spacecraft did not have any seats yet.", "Because the Moon was too far from Earth that year for a crew to reach it.", "Because astronauts are only allowed to fly on every second launch."], "a": 0, "hint": "It's the \"Test\" in \"Build, Test, Learn\".", "ex": "Artemis I (2022) tested the SLS rocket and the Orion spacecraft all the way around the Moon and back – without risking a crew. Only then did Artemis II carry astronauts."},
+  {"e": "🏹", "q": "The program is called Artemis. Where does the name come from?", "opts": ["In Greek mythology, Artemis is the goddess of the Moon and the twin sister of Apollo – the name of the first Moon program.", "It is short for \"Advanced Rocket Technology for Exploring the Moon\".", "It was the name of the first dog that flew to space.", "It is the family name of the engineer who designed the Orion spacecraft."], "a": 0, "hint": "Think about the name of the Moon program of the 1960s – and its family.", "ex": "Apollo took the first people to the Moon. Artemis – Apollo's twin sister and the goddess of the Moon in Greek mythology – gives her name to the program that returns."},
+  {"e": "🔥", "q": "What protects the Orion crew from the extreme heat when the capsule comes back into Earth's atmosphere?", "opts": ["A heat shield on the bottom of the capsule, which slowly burns away and carries the heat off.", "Its solar panels, which fold over the windows.", "A layer of ice that is sprayed on the capsule before landing.", "Its parachutes, which open while the capsule is still in space."], "a": 0, "hint": "It's on the bottom of the capsule – the side that hits the air first.", "ex": "Coming back from the Moon, Orion hits the atmosphere at about 40,000 km/h and its heat shield faces around 2,800°C. Parachutes then slow the capsule for splashdown in the ocean."}
+);
+ROOMS[1].qs.push(
+  {"e": "🪶", "q": "How strong is gravity on the Moon compared to gravity on Earth?", "opts": ["About one sixth – everything feels about six times lighter than on Earth.", "Exactly the same as on Earth.", "About twice as strong as on Earth.", "There is no gravity at all on the Moon."], "a": 0, "hint": "Think of videos of astronauts hopping on the Moon.", "ex": "The Moon's gravity is about 1/6 of Earth's. That's why astronauts hop and bounce – and why landing and lifting off needs less fuel than on Earth."},
+  {"e": "👣", "q": "Before the Artemis program, when did people last walk on the Moon?", "opts": ["In December 1972, on the Apollo 17 mission – more than 50 years ago.", "In 1969, on Apollo 11 – and never again after that.", "In 1986, on a Space Shuttle mission.", "In 2003, from the International Space Station."], "a": 0, "hint": "It was the last mission of the Apollo program.", "ex": "Twelve astronauts walked on the Moon between 1969 (Apollo 11) and December 1972 (Apollo 17). Since then nobody has been back – that's what Artemis IV is planned to change."},
+  {"e": "🧑‍🚀", "q": "Why must astronauts wear a spacesuit when they walk on the Moon?", "opts": ["The Moon has almost no atmosphere: there is no air to breathe, no air pressure, and temperatures swing from very hot to very cold.", "Because the Moon's strong gravity would crush them without it.", "Because it rains acid on the Moon almost every day.", "Because the suit makes them lighter, so they can float above the ground."], "a": 0, "hint": "What is missing on the Moon that we have all around us on Earth?", "ex": "A spacesuit is like a tiny personal spacecraft: it supplies oxygen, keeps the pressure, and protects from heat, cold and radiation – because the Moon has almost no atmosphere."},
+  {"e": "🛬", "q": "The Orion spacecraft does not land on the Moon itself. How do the astronauts get down to the surface?", "opts": ["They move into a separate lander – a Human Landing System (HLS) – that takes them down and later brings them back up to Orion.", "They jump out of Orion and float down with parachutes.", "Orion lands on its heat shield and uses it as landing legs.", "They ride down in an elevator from the International Space Station."], "a": 0, "hint": "Artemis III practices connecting Orion to this vehicle.", "ex": "Orion stays in orbit around the Moon. The crew transfers to a lander that touches down and later lifts off again. Parachutes would not work – the Moon has no air to fill them!"}
+);
+ROOMS[2].qs.push(
+  {"e": "🌗", "q": "About how long does one full day-and-night cycle last on the Moon?", "opts": ["About 29.5 Earth days – roughly two weeks of daylight followed by two weeks of night.", "24 hours, just like on Earth.", "About one hour.", "A full Earth year."], "a": 0, "hint": "It's about as long as a month.", "ex": "The Moon turns very slowly: about two weeks of sunlight, then about two weeks of darkness and deep cold. That long night is one reason a base needs more than solar panels."},
+  {"e": "🛡️", "q": "On Earth, the atmosphere and the magnetic field protect us from space radiation. What can protect astronauts who live on the Moon for months?", "opts": ["Thick shielding – for example covering the habitat with lunar soil (regolith).", "Strong sunscreen and sunglasses.", "The Moon's own thick atmosphere.", "Nothing is needed – there is no radiation on the Moon."], "a": 0, "hint": "Use what is already lying on the ground.", "ex": "The Moon has no thick atmosphere or magnetic field, so radiation reaches the surface. A thick layer of material – such as lunar soil piled over a habitat – can block much of it."},
+  {"e": "🌫️", "q": "The Moon's soil is called regolith. Why is its dust a real problem for a Moon base?", "opts": ["The dust is fine, sharp and sticky – it clings to suits and equipment and can damage seals and machines.", "The dust is so soft that every vehicle sinks completely into it.", "The dust melts into water whenever sunlight touches it.", "The dust is magnetic and erases all computers nearby."], "a": 0, "hint": "No wind or water ever smoothed its tiny grains.", "ex": "With no wind or water to wear them down, lunar dust grains stay sharp like tiny pieces of glass. The Apollo astronauts found it stuck to everything and wore out their suits."},
+  {"e": "📡", "q": "About how long does a radio signal take to travel between the Earth and the Moon?", "opts": ["About 1.3 seconds each way.", "It arrives instantly, with no delay at all.", "About 8 minutes – the same as light from the Sun.", "About 20 minutes – as it can be with Mars."], "a": 0, "hint": "Radio travels at the speed of light, and the Moon is about 384,000 km away.", "ex": "The Moon is about 384,000 km away, so a signal needs about 1.3 seconds each way – you can almost talk normally. With Mars the delay can be 20 minutes, so crews there must be far more independent."}
+);
+const QS_PER_ROOM = 4;
+
 const TIMELINE = [
-  {k:1,t:"🛰️ Artemis I – uncrewed flight around the Moon (2022)"},
-  {k:2,t:"🌘 Artemis II – 4 astronauts fly around the Moon (April 2026)"},
-  {k:3,t:"🌍 Artemis III – docking practice in Earth orbit (2027)"},
-  {k:4,t:"👣 Artemis IV – landing on the Moon! (early 2028)"},
-  {k:5,t:"🏗️ Artemis V – second landing and building a base (late 2028)"}
+  {k:1,s:"🛰️ An uncrewed test flight around the Moon",t:"🛰️ Artemis I – uncrewed flight around the Moon (2022)"},
+  {k:2,s:"🌘 Four astronauts fly around the Moon – without landing",t:"🌘 Artemis II – 4 astronauts fly around the Moon (April 2026)"},
+  {k:3,s:"🌍 Docking practice in Earth orbit",t:"🌍 Artemis III – docking practice in Earth orbit (2027)"},
+  {k:4,s:"👣 Astronauts land on the Moon again",t:"👣 Artemis IV – landing on the Moon! (early 2028)"},
+  {k:5,s:"🏗️ A second landing – and starting to build the base",t:"🏗️ Artemis V – second landing and building a base (late 2028)"}
 ];
 
 /* ================= STATE ================= */
@@ -2805,8 +2833,8 @@ function sweep(f1,f2,d,type="sine",vol=.08){if(muted)return;const a=ac();if(!a)r
 function noise(d=1,freq=800,vol=.15,q=1){if(muted)return;const a=ac();if(!a)return;try{const n=a.sampleRate*d,b=a.createBuffer(1,n,a.sampleRate),ch=b.getChannelData(0);for(let i=0;i<n;i++)ch[i]=Math.random()*2-1;
   const s=a.createBufferSource();s.buffer=b;const f=a.createBiquadFilter();f.type="lowpass";f.frequency.value=freq;f.Q.value=q;const g=a.createGain();g.gain.setValueAtTime(.0001,a.currentTime);g.gain.exponentialRampToValueAtTime(vol,a.currentTime+d*.2);g.gain.exponentialRampToValueAtTime(.0001,a.currentTime+d);
   s.connect(f);f.connect(g);g.connect(a.destination);s.start()}catch(e){}}
-function sGood(){beep(660,.1,"triangle");beep(880,.1,"triangle",.08,.09);beep(1320,.2,"triangle",.08,.18)}
-function sBad(){beep(160,.35,"sawtooth",.09);beep(120,.35,"square",.05,.05)}
+function sGood(){buzz(30);beep(660,.1,"triangle");beep(880,.1,"triangle",.08,.09);beep(1320,.2,"triangle",.08,.18)}
+function sBad(){buzz([90,50,90]);beep(160,.35,"sawtooth",.09);beep(120,.35,"square",.05,.05)}
 function sFanfare(){[523,659,784,1047,784,1047].forEach((f,i)=>beep(f,.25,"triangle",.09,i*.13))}
 
 /* ================= FX CANVAS (particles) ================= */
@@ -2897,17 +2925,64 @@ function renderRoomsHud(){
    + `<span class="${S.room>=3?'on':''}">🏠 Return home</span>`;
 }
 function tick(){
-  if(S.over||S.paused||S.inBonus) return;
-  S.left -= 1; updateO2();
-  if(S.left<=120 && S.left>0 && S.left%5===0){beep(990,.12,"square",.05);beep(740,.12,"square",.05,.15)}
-  if(S.left<=0){ clearInterval(timer); lose(); }
+  const now=Date.now();
+  if(S.over||S.paused||S.inBonus||!S.clock){ S.clock=now; return; }
+  const d=Math.floor((now-S.clock)/1000); if(d<1) return;     /* real seconds, even after the app was in the background */
+  S.clock+=d*1000; S.left-=d; updateO2();
+  if(S.left<=120 && S.left>0 && (d>1||S.left%5===0)){beep(990,.12,"square",.05);beep(740,.12,"square",.05,.15)}
+  if(S.left<=0){ clearInterval(timer); lose(); return; }
+  if(d>1||S.left%5===0) saveGame();
 }
+/* ================= SAVED PROGRESS ================= */
+const SAVE_KEY="btm_save";
+function saveGame(){ if(!S||!S.team||S.over) return; try{localStorage.setItem(SAVE_KEY,JSON.stringify({v:1,at:Date.now(),minutes,S:Object.assign({},S,{_autoPaused:false})}))}catch(e){} }
+function clearSave(){ try{localStorage.removeItem(SAVE_KEY)}catch(e){} }
+function startClock(){ S.clock=Date.now(); clearInterval(timer); timer=setInterval(tick,250); wakeOn(); }
+function restoreGame(){
+  let d=null; try{d=JSON.parse(localStorage.getItem(SAVE_KEY)||"null")}catch(e){}
+  if(!d||!d.S||!d.S.team||d.S.over||!Array.isArray(d.S.picks)) return;
+  const s=d.S;
+  if(!s.paused&&!s.inBonus) s.left-=Math.max(0,Math.round((Date.now()-d.at)/1000));
+  if(s.left<=0){ clearSave(); toast("Your last mission ran out of oxygen while you were away"); return; }
+  const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  app.innerHTML=`
+  <div class="card center">
+    <img class="patch logo" src="icons/logo.jpg" alt="Beyond the Moon">
+    <div class="kicker">Mission in progress</div>
+    <h2 class="big" style="font-size:clamp(28px,4.5vw,44px)">Welcome back, ${esc(s.team)}!</h2>
+    <p>${s.room<3?"Room "+(s.room+1)+" of 3":"Final challenge"} · oxygen left: <b>${fmt(s.left)}</b></p>
+    <p class="muted">The oxygen clock kept running while you were away.</p>
+    <div class="row"><button class="btn pulse" id="resumeGame">▶ Resume mission</button><button class="btn ghost" id="newGame">New game</button></div>
+  </div>`;
+  $("#newGame").onclick=()=>{ clearSave(); intro(); };
+  $("#resumeGame").onclick=()=>{
+    ac(); S=s; S.over=false; S.paused=false; S._autoPaused=false; minutes=d.minutes||minutes;
+    $("#hud").classList.remove("hidden"); renderRoomsHud(); updateO2(); startClock();
+    if(S.screen==="question"){ if(S.frags.includes(S.q)) S.q++; S.q<QS_PER_ROOM?question():keypad(); }
+    else if(S.screen==="keypad") keypad();
+    else if(S.screen==="door") openDoor();
+    else if(S.screen==="bonus") bonus(S.bonusI||0,briefing);
+    else if(S.screen==="final") finalPuzzle();
+    else briefing();
+    showPage();
+  };
+}
+/* ================= PHONE FEEL: haptics, screen wake lock ================= */
+function buzz(p){ try{ if(navigator.vibrate) navigator.vibrate(p) }catch(e){} }
+let wakeLock=null;
+async function wakeOn(){ try{ if("wakeLock" in navigator && !wakeLock && document.visibilityState==="visible"){ wakeLock=await navigator.wakeLock.request("screen"); wakeLock.addEventListener("release",()=>{wakeLock=null}); } }catch(e){} }
+function wakeOff(){ try{ if(wakeLock) wakeLock.release() }catch(e){} wakeLock=null; }
+document.addEventListener("visibilitychange",()=>{
+  if(document.visibilityState==="hidden"){ saveGame(); }
+  else { tick(); if(S&&S.team&&!S.over) wakeOn(); }
+});
+addEventListener("pagehide",()=>saveGame());
 function updateO2(){
   const p = Math.max(0,S.left/S.total*100);
   $("#o2fill").style.width=p+"%"; $("#o2time").textContent=fmt(S.left);
   const low=S.left<=120&&!S.over; $("#o2").classList.toggle("low",low); $("#alarm").classList.toggle("low",low);
 }
-function penalty(sec,msg){S.left-=sec;S.penalty+=sec;updateO2();flash();toast(msg);if(S.left<=0){clearInterval(timer);lose();}}
+function penalty(sec,msg){S.left-=sec;S.penalty+=sec;updateO2();flash();toast(msg);if(S.left<=0){clearInterval(timer);lose();}else saveGame();}
 
 /* ================= SCREENS ================= */
 function stopMovie(){if(movieRaf)cancelAnimationFrame(movieRaf);movieRaf=null}
@@ -2917,7 +2992,7 @@ function intro(){
   app.innerHTML = `
   <div class="card center">
     
-    ${patchSVG("moon")}
+    <img class="patch logo" src="icons/logo.jpg" alt="Beyond the Moon logo">
     <div class="kicker">Mission Control is calling!</div>
     <h1 class="big" style="direction:ltr;letter-spacing:.06em">BEYOND THE MOON</h1>
     <div class="kicker" style="font-size:18px;margin-bottom:8px">An Artemis escape room</div>
@@ -2936,23 +3011,26 @@ function intro(){
       <button data-m="10">10 min</button><button data-m="15" class="on">15 min</button><button data-m="20">20 min</button>
     </div>
     <div class="row"><button class="btn pulse" id="start">🚀 Start the mission</button></div>
+    ${isStandalone()?"":`<div class="row" id="installRow" style="margin-top:12px"><button class="btn ghost small" id="installBtn">📲 Install the app</button></div>`}
     <div class="infolinks"><a href="#artemis">🌕 Artemis missions</a><a href="#teachers">🍎 For teachers</a><a href="#qr">📱 QR code</a></div>
   </div>`;
   document.querySelectorAll("#seg button").forEach(b=>b.onclick=()=>{
     document.querySelectorAll("#seg button").forEach(x=>x.classList.remove("on"));b.classList.add("on");minutes=+b.dataset.m;beep(600,.05)});
+  const ib=$("#installBtn"); if(ib) ib.onclick=installClick;
   $("#start").onclick=async()=>{
     ac();
-    S={team:($("#team").value.trim()||"Your team"),room:0,q:0,total:minutes*60,base:minutes*60,left:minutes*60,penalty:0,hints:0,wrong:0,over:true,paused:false,inBonus:false};
+    S={team:($("#team").value.trim()||"Your team"),room:0,q:0,total:minutes*60,base:minutes*60,left:minutes*60,penalty:0,hints:0,wrong:0,over:true,paused:false,inBonus:false,
+       picks:ROOMS.map(r=>shuffle(r.qs.map((_,i)=>i)).slice(0,QS_PER_ROOM))};
     await countdown();
     S.over=false;
     $("#hud").classList.remove("hidden"); renderRoomsHud(); updateO2();
-    clearInterval(timer); timer=setInterval(tick,1000);
+    startClock();
     briefing();
   };
 }
 
 function briefing(){
-  const r=ROOMS[S.room]; S.q=0; S.frags=[]; S.order=shuffle([0,1,2,3]); renderRoomsHud();
+  const r=ROOMS[S.room]; S.q=0; S.frags=[]; S.order=shuffle([0,1,2,3]); S.screen="briefing"; saveGame(); renderRoomsHud();
   app.innerHTML=`
   <div class="card center">
     ${patchSVG(r.patch)}
@@ -2974,7 +3052,7 @@ function fragsHTML(newPos){
 function dotsHTML(){return `<span class="dots">${[0,1,2,3].map(i=>`<i class="${i<S.q?'d':(i===S.q?'c':'')}"></i>`).join("")}</span>`}
 
 function question(){
-  const r=ROOMS[S.room], item=r.qs[S.q];
+  const r=ROOMS[S.room], item=r.qs[S.picks[S.room][S.q]]; S.screen="question"; saveGame();
   const opts=shuffle(item.opts.map((t,i)=>({t,i})));
   app.innerHTML=`
   <div class="card">
@@ -3002,7 +3080,7 @@ function question(){
       b.classList.add("right"); document.querySelectorAll(".opt").forEach(x=>x.disabled=true);
       const rc=b.getBoundingClientRect(); burst(rc.left+rc.width/2,rc.top+rc.height/2,55);
       $("#ex").classList.add("show"); sGood(); toast("Great! You got a digit 🔑",true);
-      S.frags.push(S.q);
+      S.frags.push(S.q); saveGame();
       $("#fragbox").innerHTML=`<span class="muted" style="font-size:15px">Code digits collected:</span>${fragsHTML(S.q)}`;
       setTimeout(()=>{const f=document.querySelector(".frag.new");if(f){const q=f.getBoundingClientRect();burst(q.left+q.width/2,q.top+q.height/2,25,["#ffb347","#fff"])}},250);
       const n=$("#next"); n.style.visibility="visible"; n.classList.add("pulse"); n.textContent = S.q<3?"Next question →":"🔒 To the keypad →";
@@ -3015,6 +3093,7 @@ function question(){
 }
 
 function keypad(){
+  S.screen="keypad"; saveGame();
   const r=ROOMS[S.room]; let entry="";
   app.innerHTML=`
   <div class="card center">
@@ -3045,6 +3124,7 @@ function keypad(){
 }
 
 function openDoor(){
+  S.screen="door"; saveGame();
   const last = S.room===2;
   app.innerHTML=`
   <div class="card center">
@@ -3059,15 +3139,16 @@ function openDoor(){
 }
 
 function finalPuzzle(){
+  S.screen="final"; saveGame();
   let picked=[]; const items=shuffle(TIMELINE);
   const draw=()=>{
     app.innerHTML=`
     <div class="card center">
       <div class="kicker">Final challenge · The return spacecraft</div>
       <h2 style="font-size:32px;margin:6px 0">🛰️ Put the Artemis missions in order</h2>
-      <p class="muted">Click the missions from first to last. Click again to undo.</p>
+      <p class="muted">Which step of the Artemis program comes first? Click the steps from first to last. Click again to undo.</p>
       <div class="timeline">${items.map(it=>{const idx=picked.indexOf(it.k);
-        return `<button class="tl-item ${idx>-1?'picked':''}" data-k="${it.k}"><span class="n">${idx>-1?idx+1:"·"}</span><span>${it.t}</span></button>`}).join("")}</div>
+        return `<button class="tl-item ${idx>-1?'picked':''}" data-k="${it.k}"><span class="n">${idx>-1?idx+1:"·"}</span><span>${it.s}</span></button>`}).join("")}</div>
       <div class="row"><button class="btn ${picked.length===5?'pulse':''}" id="check" ${picked.length<5?'disabled style="opacity:.45"':''}>🌍 Launch the return spacecraft</button>
       <button class="btn ghost" id="reset">Reset</button></div>
     </div>`;
@@ -3075,7 +3156,10 @@ function finalPuzzle(){
       if(i>-1)picked.splice(i,1);else picked.push(k);beep(400+picked.length*100,.06,"triangle");draw();});
     $("#reset").onclick=()=>{picked=[];draw()};
     $("#check").onclick=()=>{ if(picked.length<5)return;
-      if(picked.every((k,i)=>k===i+1)){sGood();S.over=true;clearInterval(timer);doorTransition(win)}
+      if(picked.every((k,i)=>k===i+1)){sGood();S.over=true;clearInterval(timer);clearSave();
+        document.querySelector(".timeline").innerHTML=TIMELINE.map((it,i)=>`<div class="tl-item reveal"><span class="n">${i+1}</span><span>${it.t}</span></div>`).join("");
+        document.querySelectorAll("#check,#reset").forEach(b=>b.disabled=true);
+        setTimeout(()=>doorTransition(win),2600)}
       else{sBad();penalty(PEN_WRONG,"❌ Wrong order! −30 seconds of oxygen");picked=[];draw()} };
   };
   draw();
@@ -3083,7 +3167,7 @@ function finalPuzzle(){
 
 /* ================= FINAL MOVIE ================= */
 function win(){
-  S.over=true; clearInterval(timer); S.room=3; renderRoomsHud(); $("#alarm").classList.remove("low"); $("#o2").classList.remove("low"); document.onkeydown=null;
+  S.over=true; clearInterval(timer); clearSave(); wakeOff(); buzz([60,40,60,40,160]); S.room=3; renderRoomsHud(); $("#alarm").classList.remove("low"); $("#o2").classList.remove("low"); document.onkeydown=null;
   const frac=Math.min(1,S.left/S.base), nstars=frac>=.5?3:frac>=.25?2:1;
   const {b,me}=saveScore();
   app.innerHTML=`
@@ -3100,11 +3184,16 @@ function win(){
       <div class="stat"><b>${S.wrong}</b>Mistakes</div>
       <div class="stat"><b>${S.hints}</b>Hints</div>
     </div>
-    <div class="row"><button class="btn ghost" id="replay">▶ Watch the landing again</button><button class="btn" id="again">🚀 New game</button></div>
+    <div class="row"><button class="btn ghost" id="replay">▶ Watch the landing again</button><button class="btn" id="again">🚀 New game</button><button class="btn ghost" id="share">📤 Share result</button></div>
     ${boardHTML(b,me)}
     ${debriefHTML()}
   </div>`;
   $("#again").onclick=intro;
+  $("#share").onclick=async()=>{
+    const text=`🚀 ${S.team} escaped BEYOND THE MOON with ${fmt(S.left)} of oxygen left (${S.wrong} mistakes, ${S.hints} hints). Can you beat us?`;
+    try{ if(navigator.share) await navigator.share({title:"Beyond the Moon",text,url:APP_URL});
+         else { await navigator.clipboard.writeText(text+" "+APP_URL); toast("Result copied – paste it anywhere!",true); } }catch(e){}
+  };
   $("#replay").onclick=()=>playMovie();
   const cb=$("#clearBoard"); if(cb) cb.onclick=()=>{ if(cb.dataset.sure){try{localStorage.removeItem("btm_scores")}catch(e){} cb.parentElement.remove();} else {cb.dataset.sure=1;cb.textContent="Click again to clear";} };
   playMovie();
@@ -3273,7 +3362,7 @@ function playMovie(){
 }
 
 function lose(){
-  S.over=true; S.inBonus=false; clearInterval(timer); document.onkeydown=null; document.onkeyup=null; $("#pause").classList.remove("show");
+  S.over=true; S.inBonus=false; clearInterval(timer); clearSave(); wakeOff(); buzz([200,100,200]); document.onkeydown=null; document.onkeyup=null; $("#pause").classList.remove("show");
   $("#alarm").classList.remove("low"); $("#o2").classList.remove("low");
   const done=Math.min(S.room,3);
   app.innerHTML=`
@@ -3398,7 +3487,7 @@ function playCrash(){
 /* ================= BONUS MINI-GAMES ================= */
 function bonus(i,next){
   stopMovie(); document.onkeydown=null; document.onkeyup=null;
-  const dock=i===0; S.inBonus=true;
+  const dock=i===0; S.inBonus=true; S.screen="bonus"; S.bonusI=i; saveGame();
   app.innerHTML=`
   <div class="card center" style="padding:20px">
     <div class="kicker">BONUS MISSION · the oxygen clock is paused</div>
@@ -3519,7 +3608,7 @@ function bonus(i,next){
 
 /* ================= DEBRIEF & LEADERBOARD ================= */
 function debriefHTML(){
-  return `<details class="debrief"><summary>📚 Mission debrief – what we learned</summary>${ROOMS.map(r=>`<h3>${r.name} · ${r.when}</h3><ul>${r.qs.map(q=>`<li>${q.ex}</li>`).join("")}</ul>`).join("")}</details>`;
+  return `<details class="debrief"><summary>📚 Mission debrief – what we learned</summary>${ROOMS.map((r,ri)=>`<h3>${r.name} · ${r.when}</h3><ul>${(S.picks?S.picks[ri].map(i=>r.qs[i]):r.qs).map(q=>`<li>${q.ex}</li>`).join("")}</ul>`).join("")}</details>`;
 }
 function saveScore(){
   let b=[];try{b=JSON.parse(localStorage.getItem("btm_scores")||"[]")}catch(e){}
@@ -3539,8 +3628,8 @@ function boardHTML(b,me){
 
 /* ================= CONTROLS ================= */
 $("#bSound").onclick=()=>{muted=!muted;$("#bSound").textContent=muted?"🔇":"🔊"};
-$("#bPause").onclick=()=>{if(S.over||S.inBonus)return;S.paused=true;$("#pause").classList.add("show")};
-$("#resume").onclick=()=>{S.paused=false;$("#pause").classList.remove("show");beep(660,.1)};
+$("#bPause").onclick=()=>{if(S.over||S.inBonus)return;S.paused=true;saveGame();$("#pause").classList.add("show")};
+$("#resume").onclick=()=>{S.paused=false;S.clock=Date.now();saveGame();$("#pause").classList.remove("show");beep(660,.1)};
 $("#bFull").onclick=()=>{try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen().catch(()=>{})}catch(e){}};
 
 
@@ -3575,8 +3664,35 @@ try{const sv=localStorage.getItem("btm_qr_single");if(sv)$("#qrin").value=sv}cat
 $("#qrin").addEventListener("input",drawQR);
 $("#toggleAns").onclick=()=>{const h=$("#qlist").classList.toggle("hide");$("#toggleAns").textContent=h?"👁️ Show answers":"🙈 Hide answers"};
 
+/* ================= INSTALL ================= */
+const APP_URL=(/^https?:$/.test(location.protocol)&&location.hostname!=="localhost")?location.origin+location.pathname:"https://golan-guy.github.io/beyond-the-moon/";
+let deferredInstall=null;
+function isStandalone(){ try{ return matchMedia("(display-mode: standalone)").matches||navigator.standalone===true||!!window.Capacitor }catch(e){ return false } }
+addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); deferredInstall=e; });
+addEventListener("appinstalled",()=>{ deferredInstall=null; const r=$("#installRow"); if(r) r.remove(); toast("App installed! 🚀",true); });
+function sheet(html){ $("#sheetBody").innerHTML=html; $("#sheet").classList.add("show"); }
+$("#sheetClose").onclick=()=>$("#sheet").classList.remove("show");
+function installClick(){
+  if(deferredInstall){ const p=deferredInstall; deferredInstall=null; p.prompt(); return; }
+  const ua=navigator.userAgent, ios=/iPad|iPhone|iPod/.test(ua)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+  const android=/Android/.test(ua), head='<div style="font-size:56px">📲</div><h2 style="font-size:30px;margin:6px 0">Install the app</h2>';
+  if(ios && !/Safari/.test(ua)) sheet(head+'<p>This page is open inside another app. First open it in <b>Safari</b>:</p><ol><li>Tap the <b>⋯</b> or share icon</li><li>Choose <b>Open in Safari</b> (or copy the link into Safari)</li><li>Then tap Install again</li></ol>');
+  else if(ios) sheet(head+'<ol><li>Tap the <b>Share</b> button <span style="font-size:22px">⎋</span> (the square with an arrow)</li><li>Scroll down and tap <b>Add to Home Screen</b></li><li>Tap <b>Add</b></li></ol>');
+  else if(android) sheet(head+'<ol><li>Tap the <b>⋮</b> menu at the top of the browser</li><li>Tap <b>Install app</b> or <b>Add to Home screen</b></li><li>Confirm with <b>Install</b></li></ol>');
+  else sheet(head+'<ol><li>Look for the <b>install icon</b> at the end of the address bar</li><li>Or open the browser menu and choose <b>Install Beyond the Moon</b></li></ol>');
+}
+/* ================= TEACHERS: full question pool ================= */
+(function renderQList(){
+  const el=$("#qlist"); if(!el) return; let n=0;
+  el.innerHTML=ROOMS.map(r=>`<h3 class="qroom">${r.title} <span class="pill">${r.name} · ${r.when}</span> <span class="pill">Code: ${r.code}</span></h3>`+
+    r.qs.map(q=>`<div class="q"><b>${++n}. ${q.q}</b><div class="opts">${q.opts.map((o,i)=>`<span class="${i===q.a?"ans":""}">${o}</span>`).join(" · ")}</div><div class="qh">Hint: ${q.hint}</div></div>`).join("")).join("")+
+    `<h3 class="qroom">Final challenge: the timeline</h3><ol class="tlq">${TIMELINE.map(t=>`<li>${t.t}</li>`).join("")}</ol>`;
+  const c=$("#qcount"); if(c) c.textContent=`${n} questions in the pool · every game draws ${QS_PER_ROOM} per room at random · the correct answer is marked in green`;
+})();
+
 intro();
 showPage();
+restoreGame();
 </script>
 <script>if("serviceWorker" in navigator&&/^https?:$/.test(location.protocol)&&!window.Capacitor){addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))}</script>
 </body>
