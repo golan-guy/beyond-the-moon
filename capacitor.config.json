@@ -1,0 +1,7 @@
+{
+  "appId": "com.beyondthemoon.game",
+  "appName": "Beyond the Moon",
+  "webDir": "www",
+  "backgroundColor": "#03050c",
+  "android": { "backgroundColor": "#03050c" }
+}

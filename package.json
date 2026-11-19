@@ -1,0 +1,21 @@
+{
+  "name": "beyond-the-moon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beyond the Moon – an Artemis escape-room game, packaged as an installable web app and an Android app",
+  "scripts": {
+    "serve": "npx --yes serve www",
+    "android:init": "cap add android && capacitor-assets generate --android --assetPath resources",
+    "android:sync": "cap sync android",
+    "android:open": "cap open android",
+    "android:apk": "cap sync android && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0"
+  }
+}
